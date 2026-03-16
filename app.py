@@ -1,9 +1,13 @@
 import streamlit as st
 import random
 
-st.set_page_config(layout="wide")
-st.title("Program Sistem Bilangan")
+st.set_page_config(
+    page_title="Program Sistem Bilangan",
+    page_icon="🧮",
+    layout="wide"
+)
 
+st.title("Program Sistem Bilangan")
 # =========================
 # SIDEBAR MENU
 # =========================
