@@ -3,7 +3,6 @@ import random
 
 st.set_page_config(
     page_title="Program Sistem Bilangan",
-    page_icon="🧮",
     layout="wide"
 )
 
