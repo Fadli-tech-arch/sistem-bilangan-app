@@ -23,7 +23,7 @@ base_map = {
     "Hexadesimal": 16
 }
 
-=
+
 if menu == "Konversi":
 
     st.subheader("Konversi Sistem Bilangan")
