@@ -7,9 +7,7 @@ st.set_page_config(
 )
 
 st.title("Program Sistem Bilangan")
-# =========================
-# SIDEBAR MENU
-# =========================
+
 
 menu = st.sidebar.selectbox(
     "Pilih Fitur",
@@ -25,9 +23,7 @@ base_map = {
     "Hexadesimal": 16
 }
 
-# =========================
-# 1 KONVERSI
-# =========================
+=
 if menu == "Konversi":
 
     st.subheader("Konversi Sistem Bilangan")
@@ -67,9 +63,7 @@ if menu == "Konversi":
         except:
             st.error("Input tidak sesuai dengan jenis bilangan")
 
-# =========================
-# 2 CALCULATOR
-# =========================
+
 elif menu == "Calculator":
 
     st.subheader("Calculator Sistem Bilangan")
@@ -130,9 +124,6 @@ elif menu == "Calculator":
         except:
             st.error("Input tidak valid")
 
-# =========================
-# 3 BCD
-# =========================
 elif menu == "BCD":
 
     st.subheader("Konversi Code Digital")
@@ -195,9 +186,7 @@ elif menu == "BCD":
         except:
             st.error("Input tidak valid")
 
-# =========================
-# 4 KOMPLEMEN
-# =========================
+
 elif menu == "Komplemen":
 
     st.subheader("Komplemen Biner")
@@ -226,9 +215,7 @@ elif menu == "Komplemen":
                 st.write("Komplemen 2")
                 st.success(k2)
 
-# =========================
-# MINI GAME
-# =========================
+
 elif menu == "Mini Game":
 
     st.subheader("Mini Game Sistem Bilangan 🎮")
@@ -262,9 +249,6 @@ elif menu == "Mini Game":
     if "question_bin" not in st.session_state:
         st.session_state.question_bin = None
 
-    # =========================
-    # RESET
-    # =========================
 
     if st.button("Reset Score"):
         st.session_state.score = 0
@@ -273,9 +257,7 @@ elif menu == "Mini Game":
         st.session_state.question_conv = None
         st.session_state.question_bin = None
 
-    # =========================
-    # LEVEL SYSTEM
-    # =========================
+
 
     level = "Beginner"
 
@@ -290,9 +272,6 @@ elif menu == "Mini Game":
 
     st.info(f"Level : *{level}*")
 
-    # =========================
-    # GAME 1
-    # =========================
 
     if mini_menu == "Conversion Challenge":
 
@@ -361,9 +340,6 @@ elif menu == "Mini Game":
         if st.button("Next Question"):
             st.session_state.question_conv = None
 
-    # =========================
-    # GAME 2
-    # =========================
 
     elif mini_menu == "Binary Operation":
 
@@ -412,9 +388,6 @@ elif menu == "Mini Game":
         if st.button("Next Question"):
             st.session_state.question_bin = None
 
-    # =========================
-    # SCOREBOARD
-    # =========================
 
     col1,col2,col3 = st.columns(3)
 
